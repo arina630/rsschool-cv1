@@ -8,9 +8,9 @@
   * E-mail: aarinasoloveyy@mail.ru
 
 ---
-## About me:
-My name's Arina, I am 20 years old. I'm just beginning to explore this area. I like learning, exploring, working in a team. I don't like sitting in one place. I love to create, build, and enjoy my successes. 
-I've already faced a lot of challenges and I know there will be more. But I'm sure thanks to persistence, hard work and my interest, I will succeed!:)
+## Summary:
+My name is Arina, and I’m 21 years old. I’m just starting to explore this field. I enjoy learning, exploring, and working in a team. I don’t like staying in one place for too long. I love creating, building, and celebrating my successes.
+I’ve already faced many challenges, and I know there will be more ahead. But I’m confident that, with persistence, hard work, and my passion, I will succeed! :)
 
 ## Skills
 * HTML/CSS (Basic)

@@ -1,3 +1,209 @@
-.background {
-    background-color: khaki;
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/fonts/RobotoMono-Regular.woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/fonts/RobotoMono-Regular.woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;/**если файлы шрифта почему то не загрузятся*/
+}
+
+/* Ctrl+K Ctrl+F */
+/* ctrl + /  */
+
+/**
+  Нормализация блочной модели
+ */
+ *,
+ *::before,
+ *::after {
+   box-sizing: border-box;
+ }
+ 
+ /**
+   Убираем внутренние отступы слева тегам списков,
+   у которых есть атрибут class
+  */
+ :where(ul, ol):where([class]) {
+   padding-left: 0;
+ }
+ 
+ /**
+   Убираем внешние отступы body и двум другим тегам,
+   у которых есть атрибут class
+  */
+ body,
+ :where(blockquote, figure):where([class]) {
+   margin: 0;
+ }
+ 
+ /**
+   Убираем внешние отступы вертикали нужным тегам,
+   у которых есть атрибут class
+  */
+ :where(
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p,
+   ul,
+   ol,
+   dl
+ ):where([class]) {
+   margin-block: 0;
+ }
+ 
+ :where(dd[class]) {
+   margin-left: 0;
+ }
+ 
+ /**
+   Убираем стандартный маркер маркированному списку,
+   у которого есть атрибут class
+  */
+ :where(ul[class]) {
+   list-style: none;
+ }
+ 
+ /**
+   Упрощаем работу с изображениями
+  */
+ img {
+   display: block;
+   max-width: 100%;
+ }
+ 
+ /**
+   Наследуем свойства шрифт для полей ввода
+  */
+ input,
+ textarea,
+ select,
+ button {
+   font: inherit;
+ }
+ 
+ html {
+   /**
+     Пригодится в большинстве ситуаций
+     (когда, например, нужно будет "прижать" футер к низу сайта)
+    */
+   height: 100%;
+   /**
+     Плавный скролл
+    */
+   scroll-behavior: smooth;
+ }
+ 
+ body {
+   /**
+     Пригодится в большинстве ситуаций
+     (когда, например, нужно будет "прижать" футер к низу сайта)
+    */
+   min-height: 100%;
+   /**
+     Унифицированный интерлиньяж
+    */
+   line-height: 1.5;
+ }
+ 
+ /**
+   Удаляем все анимации и переходы для людей,
+   которые предпочитают их не использовать
+  */
+ @media (prefers-reduced-motion: reduce) {
+   * {
+     animation-duration: 0.01ms !important;
+     animation-iteration-count: 1 !important;
+     transition-duration: 0.01ms !important;
+     scroll-behavior: auto !important;
+   }
+ }
+
+  * {
+  box-sizing: border-box;
+ } 
+
+ :root {
+  /**Глобальные переменные*/
+  --font-family-base: 'Poppins', sans-serif;
+  --container-width: 1400px;
+  --container-padding-x: 30px;
+  --transition-duration: 0.2s;
+  --font-weight-title: 700;
+  --font-weight-subtitle: 400;
+ }
+ 
+ body {
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  background-color: #d8fcbc;
+ }
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+}
+
+ .title {
+  font-weight: var(--font-weight-title);
+ }
+
+ .subtitle {
+  font-weight: var(--font-weight-subtitle);
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-title);
+  text-transform: uppercase;
+  color:#006400;
+ }
+
+ p {
+  color: #000000;
+ }
+
+ .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9eda6e;
+ }
+
+ .photo {
+  height: auto;
+  min-width: 150px;
+ }
+
+ .header-content {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  padding-inline: 4em;
+  white-space: nowrap;
+ }
+
+ .header-title {
+  font-size: clamp(30px, 5.5vw, 100px);
+  background-color: #fff;
+  border-radius: 50px;
+ }
+
+ .header-subtitle {
+  font-size: clamp(22px, 2.5vw, 80px);
+ }
+
+ .header-content {
+  height: calc(50px, 4vw, 100px);
+ }
+
+ 
