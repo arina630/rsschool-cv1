@@ -12,6 +12,12 @@
 My name is Arina, and I’m 21 years old. I’m just starting to explore this field. I enjoy learning, exploring, and working in a team. I don’t like staying in one place for too long. I love creating, building, and celebrating my successes.
 I’ve already faced many challenges, and I know there will be more ahead. But I’m confident that, with persistence, hard work, and my passion, I will succeed! :)
 
+## My Strengths
+ * Hardworking, diligent, exploratory
+ * Creative
+ * Resourceful 
+ * Diligent
+
 ## Skills
 * HTML/CSS (Basic)
 

@@ -110,6 +110,8 @@
      (когда, например, нужно будет "прижать" футер к низу сайта)
     */
    min-height: 100%;
+   margin: 0;
+   padding: 0;
    /**
      Унифицированный интерлиньяж
     */
@@ -172,6 +174,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
   background-color: #c3eca1;
   background: url(/assets/img/tsvet-fona-html.webp) center/100% no-repeat;
   background-size: cover;
@@ -179,13 +182,36 @@
   border: solid white 10px
  }
 
+ .header-menu-list {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  column-gap: 30px;
+ }
+
+ .header-menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: var(--font-weight-title);
+  font-size: clamp(30px, 2.6vw, 50px);
+  color: rgb(2, 58, 32);
+ }
+
+
  .photo {
   height: auto;
   min-width: 150px;
   border-radius: 200px;
  }
 
- .header-content {
+ .header-info {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -222,34 +248,44 @@
   align-items: center ;
   justify-content: center;
   height: 4rem;
-  max-width: 960px;
+  max-width: 990px;
   border: solid rgb(2, 58, 32) 4px;
   border-radius: 20px;
   font-weight: 700;
-  font-size: clamp(30px, 2.6vw, 50px); /* размер экрана 1920 делим на макс размер 50пх умножаем на 100 = 2.6 */
+  font-size: clamp(30px, 2.6vw, 50px); /* делим макс размер 50пх на размер экрана 1920(50/1920) * 100 умножаем на 100 = 2.6 */
   color: rgb(57, 158, 91);
   background-color: rgb(2, 58, 32);
-
   transition-duration: var(--transition-duration);
  }
 
  @media (min-width: 120rem) {
   .header-container {
     justify-content: space-between;
-    border-radius: 150px;
+    border-radius: 00px;
     border: solid 15px white;
   }
 
   .photo {
-    border-radius: 130px;
+    border-radius: 0px;
+    border: solid 1px #fff
   }
 }
 
  @media (max-width: 80rem) { /*1280px / 16px(дефолт размер шрифта) = 80rem*/
-  .header-container{ 
+  .header-container { 
    display: inline;
    border: 0;
   }
+
+  .header-menu-list {
+    width: 100%;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0;
+  }
+
 
   .header-photo {
     display: flex;
@@ -277,4 +313,4 @@
    .button-call {
    max-width: 1280px;
    }
- }
+  }
