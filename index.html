@@ -15,10 +15,19 @@
   <header class="header">
     <nav class="header-menu">
       <ul class="header-menu-list">
-        <li class="header-menu-item"><a href="#about" class="header-menu-link">About</a></li>
-        <li class="header-menu-item"><a href="#skills" class="header-menu-link">Skills</a></li>
-        <li class="header-menu-item"><a href="#contacts" class="header-menu-link">Contacts</a></li>
-        <li class="header-menu-item"><a href="#code example" class="header-menu-link">Code</a></li>
+        <li class="header-menu-item">
+          <a href="#about" class="header-menu-link">About</a>
+          <!-- <div class="divider-menu-bottom"></div> ----ПРИМЕР ПУСТОГО ДИВА ДЛЯ ПОДЧЕРКИВАНИЯ(ИХ БЫЛО 4 ПОСЛЕ КАЖДОГО ЭЛ-ТА <A>) -->
+        </li>
+        <li class="header-menu-item">
+          <a href="#skills" class="header-menu-link">Skills</a>
+        </li>
+        <li class="header-menu-item">
+          <a href="#contacts" class="header-menu-link">Contacts</a>
+        </li>
+        <li class="header-menu-item">
+          <a href="#code example" class="header-menu-link">Code</a>
+        </li>
       </ul>
     </nav>
     <div class=" container header-container">
@@ -41,13 +50,40 @@
     </div>
   </header>
 
+  <div class="container-content">
   <aside class="aside">
-    <section class="education"></section>
-    <sections class="experience"></sections>
-    <section class="skills"></section>
+    <div class="container">
+    <section class="education">
+      <div class="divider-left-education"></div>
+        <p class="education-title">
+        Education
+        </p>
+        <a href="(https://skillbox.by/course/frontend-pro-expert/)"class="education-link">
+            Course [Профессия Frontend-разработчик PRO2021]
+        </a>
+    </section>
+    <sections class="experience">
+      <div class="divider-left-experience"></div>
+      <p class="experience-title">
+        Experience
+      </p>
+      <a href="https://github.com/arina630/rsschool-cv/blob/gh-pages/README.md" class="experience-link"> [Rsschool-cv]
+      </a>
+    </sections>
+    <section class="skills">
+      <div class="divider-left-skills"></div>
+      <p class="skills-title">Skills</p>
+      <ul class="skills-list">
+        <li class="skills-item">HTML</li>
+        <li class="skills-item">CSS</li>
+        <li class="skills-item">JS (in proccess..)</li>
+      </ul>
+    </section>
+    </div>
   </aside>
 
   <main class="main">
+    <div class="container">
     <section class="main-about">
       <h2 class="summary">
         Summary
@@ -65,7 +101,9 @@
     </section>
     <section class="code-example"></section>
     <section class="contacts"></section>
+    </div>
   </main>
+</div>
 
   <footer class="footer">
 
